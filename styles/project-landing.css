@@ -1,9 +1,17 @@
+/* colors im using to use */
+/* 
+#1F2421
+#216869
+#49A078
+#9CC5A1
+#DCE1DE */
+
 /* typography */
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5rem;
-    background-color: #443fa1;
-    color: black;
+    background-color: #DCE1DE;
+    color: #1F2421;
 }
 
 h1, h2, h3, h4, h5,h6{
@@ -17,11 +25,38 @@ h1{
     font-size: 4rem;
     padding-top: 30px;
 }
+/* page header */
+.name-header  {
+	position: relative;
+
+}
+
+.name-header h1 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	transform: translateY(-50%);
+	margin: 0;
+	font-size: 3rem;
+	color: #DCE1DE;
+	text-transform: uppercase;
+	text-align: center;
+}
+/* image */
+
+img{
+    display: block;
+    object-fit: cover;
+    padding: 2rem 2rem 2rem 2rem;
+	
+}
 
 /* links */
 
 a, a:visited {
-	color: purple;
+	color: #49A078;
 	text-decoration: none;
     
 }
@@ -29,7 +64,7 @@ a, a:visited {
 a:hover, a:focus, a:active {
 	text-decoration: none;
     font-style: bold;
-    color: purple;
+    color: #216869;
     
 }
 
@@ -46,17 +81,12 @@ a:focus {
 .site-navigation li{
     padding-right: 20px;
 }
-/* image */
 
-.gaming img{
-    display: block;
-    object-fit: cover;
-    padding: 2rem 2rem 2rem 2rem;
-}
 /* About me */
 .section-about-me h2{
     padding-top: 20px;
     text-align: center;
+	padding-bottom: 20px;
 }
 
 .section-about-me p{
@@ -74,12 +104,9 @@ a:focus {
 }
 
 .project{
-    box-shadow: 0 0 1px 2px lightgreen;
+    box-shadow: 0 0 1px 2px #9CC5A1;
     margin: 1rem 0;
-}
-.section-image{
-    overflow: none;
-    size: 70%;
+	padding: 2rem;
 }
 /* footer */
 .site-footer{
@@ -87,6 +114,14 @@ a:focus {
     font-size: 1rem;
     background-color: whitesmoke;
 
+}
+.coming-soon, .project-link{
+	display: flex;
+	justify-content: center;
+	box-shadow: 0 0 1px 2px #9CC5A1;
+	font-size: 1.5rem;
+	padding: 2rem;
+	flex-basis: auto;
 }
 /* @media (min-width: 50em) {
 	.page-header h1 {
